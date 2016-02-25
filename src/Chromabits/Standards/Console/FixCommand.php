@@ -11,6 +11,7 @@
 
 namespace Chromabits\Standards\Console;
 
+use Chromabits\Nucleus\Support\Std;
 use Chromabits\Standards\Style\StyleConfig;
 use Symfony\CS\ConfigInterface;
 use Symfony\CS\Console\Command\FixCommand as BaseCommand;
@@ -32,7 +33,7 @@ class FixCommand extends BaseCommand
         Fixer $fixer = null,
         ConfigInterface $config = null
     ) {
-        parent::__construct($fixer, coalesce($config, new StyleConfig()));
+        parent::__construct($fixer, Std::coalesce($config, new StyleConfig()));
 
         $this->setName('style:fix');
         $this->setDescription('Fixes a directory or a file.');

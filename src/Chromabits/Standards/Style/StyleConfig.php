@@ -11,6 +11,7 @@
 
 namespace Chromabits\Standards\Style;
 
+use Chromabits\Nucleus\Support\Std;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\CS\Config\Config;
@@ -39,7 +40,7 @@ class StyleConfig extends Config
     ) {
         parent::__construct($name, $description);
 
-        $this->finder = coalesce($finder, $this->makeFinder());
+        $this->finder = Std::coalesce($finder, $this->makeFinder());
 
         $this->level(FixerInterface::NONE_LEVEL);
         $this->fixers([

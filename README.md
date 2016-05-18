@@ -1,4 +1,4 @@
-DEPRECATED: This package is no longer maintained. It has been replaced by https://github.com/sellerlabs/php-standard.
+> **DEPRECATED:** This package is no longer maintained. It has been replaced by https://github.com/sellerlabs/php-standard.
 
 # php-standard
 

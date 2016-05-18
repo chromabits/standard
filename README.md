@@ -1,3 +1,5 @@
+DEPRECATED: This package is no longer maintained. It has been replaced by https://github.com/sellerlabs/php-standard.
+
 # php-standard
 
 This repository contains tools for enforcing a personal PHP coding style
